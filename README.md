@@ -106,11 +106,11 @@ License: Public domain / CC0.
 
 MIT — free to use, modify, and distribute.
 
-## Phase 2 — Deep EDA
+## Deep EDA
 
-Run after Phase 1:
+Run after Setup:
 
-    python phase2_eda.py
+    python eda.py
 
 Produces:
 - `fred_output/real_vs_nominal.csv` — inflation adjusted retail sales
@@ -122,3 +122,17 @@ Key findings:
 - Average 2.7% of nominal growth per year is pure inflation illusion
 - COVID April 2020 scored 80/100 on recession risk (model validation)
 - Post-COVID consumer behaviour shifted — spending patterns now matter more than income levels
+
+
+##  Forecasting
+
+Run after EDA:
+
+    python forecast.py
+
+Builds 3 models and compares them:
+- Seasonal naive baseline
+- Linear regression with macro features
+- Ensemble (weighted average)
+
+Produces a 6-month forward forecast with 95% confidence intervals.
