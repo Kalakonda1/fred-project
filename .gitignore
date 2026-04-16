@@ -1,4 +1,4 @@
-# ── Python ────────────────────────────────────────────────
+﻿# Python
 __pycache__/
 *.py[cod]
 *.pyo
@@ -8,30 +8,26 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-eggs/
-.eggs/
 
-# ── Environment & Secrets ─────────────────────────────────
+# Environment and Secrets
 .env
 .env.local
-.env.*.local
 venv/
 .venv/
 env/
 ENV/
 
-# ── Project Output ────────────────────────────────────────
+# Project Output
 fred_output/
 
-# ── OS Junk ───────────────────────────────────────────────
+# OS Junk
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ── VS Code ───────────────────────────────────────────────
+# VS Code
 .vscode/settings.json
 .vscode/launch.json
 
-# ── Jupyter (in case you add notebooks later) ─────────────
+# Jupyter
 .ipynb_checkpoints/
-*.ipynb_checkpoints
