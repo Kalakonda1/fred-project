@@ -136,3 +136,16 @@ Builds 3 models and compares them:
 - Ensemble (weighted average)
 
 Produces a 6-month forward forecast with 95% confidence intervals.
+
+##  Interactive Dashboard
+
+Run the live dashboard:
+
+    streamlit run dashboard.py
+
+Features:
+- Live FRED data pull with date range picker
+- Real vs nominal revenue with inflation gap
+- Recession risk gauge with custom alert threshold
+- 6-month forecast with 95% confidence bands
+- Rolling correlation explorer with COVID impact
