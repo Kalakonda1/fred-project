@@ -69,7 +69,7 @@ st.sidebar.markdown("---")
 
 api_key = st.sidebar.text_input(
     "FRED API Key",
-    value=os.getenv("FRED_API_KEY", ""),
+    value=st.secrets.get("FRED_API_KEY", os.getenv("FRED_API_KEY", "")),
     type="password",
     help="Get a free key at fredaccount.stlouisfed.org/apikeys"
 )
